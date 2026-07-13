@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface-hover: #181818;
+  --border: rgba(255,255,255,0.08);
+  --text-primary: #f0ede8;
+  --text-secondary: rgba(240,237,232,0.45);
+  --text-muted: rgba(240,237,232,0.25);
+  --accent-getitdone: #e0c87a;
+  --accent-trace: #8b7bef;
+  --sans: 'Outfit', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── App Cards ── */
+.app-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s cubic-bezier(0.4,0,0.2,1),
+              border-color 0.25s cubic-bezier(0.4,0,0.2,1),
+              transform 0.25s cubic-bezier(0.4,0,0.2,1),
+              box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+.app-card--getitdone:hover {
+  background: var(--surface-hover);
+  border-color: rgba(224, 200, 122, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(224, 200, 122, 0.08);
+}
+
+.app-card--trace:hover {
+  background: var(--surface-hover);
+  border-color: rgba(139, 123, 239, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(139, 123, 239, 0.08);
+}
+
+.app-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-card__icon--getitdone {
+  background: rgba(224, 200, 122, 0.08);
+  border: 1px solid rgba(224, 200, 122, 0.15);
+}
+
+.app-card__icon--trace {
+  background: rgba(139, 123, 239, 0.08);
+  border: 1px solid rgba(139, 123, 239, 0.15);
+}
+
+.app-card__path {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.app-card__path--getitdone { color: rgba(224, 200, 122, 0.5); }
+.app-card__path--trace     { color: rgba(139, 123, 239, 0.5); }
+
+.app-card__title {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.app-card__desc {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+.app-card__tags {
+  margin-top: 28px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.app-card__tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
