@@ -213,7 +213,29 @@ a:hover {
   margin-bottom: 6px;
 }
 
-/* Skills */
+/* Skills sidebar rows */
+.skill-row {
+  margin-bottom: 16px;
+}
+
+.skill-row:last-child {
+  margin-bottom: 0;
+}
+
+.skill-row-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.skill-row-value {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Legacy pills — unused but kept for project tags */
 .skill-group {
   margin-bottom: 16px;
 }
