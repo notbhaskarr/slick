@@ -25,7 +25,7 @@ const amdocsRoles = [
   {
     title: 'Software Developer',
     period: "Jan '24 — Present",
-    duration: '1 yr+',
+    duration: '2.5 yr+',
     location: 'Gurugram, India',
     mode: 'Hybrid',
     bullets: [
