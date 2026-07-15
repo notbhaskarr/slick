@@ -1,13 +1,3 @@
-const topSkills = [
-  'LLMs',
-  'RAG',
-  'LangGraph',
-  'Python',
-  'FastAPI',
-  'pgvector',
-  'Prompt Engineering',
-];
-
 const coreArsenal = [
   {
     label: 'LLMs & GenAI',
@@ -39,10 +29,9 @@ const amdocsRoles = [
     location: 'Gurugram, India',
     mode: 'Hybrid',
     bullets: [
-      'Built Trace, a RAG-based GenAI assistant on enterprise billing system documentation, using LangGraph for multi-step query → retrieve → generate workflows.',
+      'Built Trace, a RAG-based GenAI assistant on enterprise billing system documentation, using LangGraph for multi-step query → retrieve → generate workflows, improving delivery efficiency by 30%.',
       'Implemented doc ingestion (chunk → embed → pgvector), semantic retrieval, and metadata-aware tools (date, location, recent docs) for grounded answers.',
-      'Added LLM-as-judge quality checks with regeneration on low faithfulness/safety failures; supported SSE streaming and voice STT/TTS interaction.',
-      'Partnered with cross-functional teams to identify high-leverage AI use cases in the software development lifecycle (SDLC) and translated them into deployable solutions.',
+      'Pinpointed and implemented necessary high-leverage AI use cases in the software development lifecycle enhancing functionality and performance.',
     ],
     skills: ['New Business Development', 'LLMs', 'RAG', 'Scope Management'],
   },
@@ -70,7 +59,6 @@ const projects = [
     href: 'https://letsgetitdone.vercel.app/demo',
     logo: '/logos/getitdone.svg',
     logoClass: 'logo-img--getitdone',
-    skills: ['Tasks', 'Peers', 'Delegation', 'Realtime'],
   },
   {
     name: 'Trace',
@@ -80,7 +68,6 @@ const projects = [
     href: 'https://github.com/notbhaskarr/trace',
     logo: '/logos/trace.svg',
     logoClass: 'logo-img--trace',
-    skills: ['RAG', 'LangGraph', 'FastAPI', 'pgvector', 'LLM Eval'],
   },
 ];
 
@@ -103,7 +90,8 @@ export default function Home() {
       <header className="profile-header">
         <h1 className="profile-name">Bhaskar Bhardwaj</h1>
         <p className="profile-headline">
-          AI Engineer | GenAI, LLMs, RAG, Agentic AI
+          <strong>AI Engineer</strong> | <strong>GenAI</strong>, <strong>LLMs</strong>,{' '}
+          <strong>RAG</strong>, <strong>Agentic AI</strong>
         </p>
         <p className="profile-location">Gurugram, Haryana, India</p>
         <p className="profile-contact">
@@ -117,14 +105,17 @@ export default function Home() {
         <h2 className="section-title">About</h2>
         <div className="about-text">
           <p>
-            AI Engineer with 3+ years of experience spanning software development, functional test
-            engineering, and applied GenAI/LLM engineering. Currently building LLM-powered assistants,
-            Retrieval-Augmented Generation (RAG) pipelines, and agentic workflows integrated with
-            enterprise backend and billing systems at Amdocs.
+            <strong>AI Engineer</strong> with 3.5+ years of experience spanning software development,
+            functional test engineering, and applied <strong>GenAI</strong>/<strong>LLM</strong>{' '}
+            engineering. Currently building <strong>LLM-powered assistants</strong>,{' '}
+            <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines, and{' '}
+            <strong>agentic workflows</strong> integrated with enterprise backend and billing systems
+            at Amdocs.
           </p>
           <p>
-            Seeking AI/ML Engineer roles to design and deploy LLM applications, RAG pipelines, and
-            agentic systems end-to-end.
+            Seeking <strong>AI Engineer</strong> roles to design and deploy{' '}
+            <strong>LLM applications</strong>, <strong>RAG pipelines</strong>, and{' '}
+            <strong>agentic systems</strong> end-to-end.
           </p>
           <div className="core-arsenal">
             <p className="core-arsenal-title">Core Arsenal:</p>
@@ -140,22 +131,14 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <div className="top-skills-box">
-          <span className="top-skills-label">Top skills</span>
-          <span className="top-skills-list">{topSkills.join(' · ')}</span>
-          <span className="top-skills-arrow" aria-hidden="true">›</span>
-        </div>
-      </section>
-
-      <section className="section">
         <h2 className="section-title">Experience</h2>
         <div className="company-block">
           <img
             src="/logos/amdocs.jpg"
             alt="Amdocs"
-            className="logo-img"
-            width={48}
-            height={48}
+            className="logo-img logo-img--amdocs"
+            width={36}
+            height={36}
           />
           <div>
             <div className="company-header">
@@ -213,7 +196,6 @@ export default function Home() {
               >
                 {project.name === 'GETitDONE' ? 'Open demo →' : 'View on GitHub →'}
               </a>
-              <SkillTags skills={project.skills} />
             </div>
           </div>
         ))}
@@ -258,9 +240,9 @@ export default function Home() {
           <img
             src="/logos/amdocs.jpg"
             alt="Amdocs"
-            className="logo-img"
-            width={48}
-            height={48}
+            className="logo-img logo-img--amdocs"
+            width={36}
+            height={36}
           />
           <div>
             <p className="item-title">Test Architect</p>

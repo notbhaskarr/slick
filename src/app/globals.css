@@ -135,42 +135,15 @@ a:hover {
   font-weight: 600;
 }
 
-/* Top skills box */
-.top-skills-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border: 1px solid var(--divider);
-  border-radius: 8px;
-  padding: 14px 16px;
-  margin-top: 4px;
-}
-
-.top-skills-label {
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.top-skills-list {
-  flex: 1;
-  font-size: 14px;
-  color: var(--text-secondary);
-  text-align: right;
-}
-
-.top-skills-arrow {
-  color: var(--text-muted);
-  font-size: 18px;
-  line-height: 1;
-}
-
 /* Experience — grouped company */
 .company-block {
   display: grid;
   grid-template-columns: 48px 1fr;
   gap: 12px;
+}
+
+.company-block:has(.logo-img--amdocs) {
+  grid-template-columns: 36px 1fr;
 }
 
 .company-logo {
@@ -190,22 +163,23 @@ a:hover {
   display: block;
 }
 
+.logo-img--amdocs {
+  width: 36px;
+  height: 36px;
+}
+
 .logo-img--contain {
   object-fit: contain;
   background: #f9f9f9;
   padding: 4px;
 }
 
-.logo-img--getitdone {
-  object-fit: contain;
-  background: #fef3e2;
-  padding: 8px;
-}
-
+.logo-img--getitdone,
 .logo-img--trace {
   object-fit: contain;
-  background: #ede9fe;
+  background: #ffffff;
   padding: 8px;
+  border: 1px solid var(--divider);
 }
 
 .company-logo-inner {
@@ -323,6 +297,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.list-item:has(.logo-img--amdocs) {
+  grid-template-columns: 36px 1fr;
+}
+
 .item-logo {
   width: 48px;
   height: 48px;
@@ -417,15 +395,5 @@ footer {
 
   .profile-name {
     font-size: 24px;
-  }
-
-  .top-skills-box {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .top-skills-list {
-    text-align: left;
   }
 }
