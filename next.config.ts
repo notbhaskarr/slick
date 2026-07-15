@@ -16,6 +16,14 @@ const nextConfig: NextConfig = {
         source: '/getitdone/:path*',
         destination: 'https://letsgetitdone.vercel.app/getitdone/:path*',
       },
+      {
+        source: '/demo',
+        destination: 'https://letsgetitdone.vercel.app/demo',
+      },
+      {
+        source: '/demo/:path*',
+        destination: 'https://letsgetitdone.vercel.app/demo/:path*',
+      },
       // Proxy /trace → letstrace.vercel.app/trace
       {
         source: '/trace',
