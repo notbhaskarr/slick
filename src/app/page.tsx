@@ -1,136 +1,158 @@
-'use client';
+const experience = [
+  {
+    role: 'Software Developer',
+    company: 'Amdocs',
+    period: "Jan '24 — Present",
+    location: 'Gurugram, India',
+    bullets: [
+      'Built Trace, a RAG-based GenAI assistant on enterprise billing system documentation, using LangGraph for multi-step query → retrieve → generate workflows.',
+      'Implemented doc ingestion (chunk → embed → pgvector), semantic retrieval, and metadata-aware tools for grounded answers.',
+      'Added LLM-as-judge quality checks with regeneration on low faithfulness/safety failures; supported SSE streaming and voice STT/TTS.',
+      'Partnered with cross-functional teams to identify high-leverage AI use cases in SDLC and translated them into deployable solutions.',
+    ],
+  },
+  {
+    role: 'Functional Test Engineer',
+    company: 'Amdocs',
+    period: "Sep '22 — Jan '24",
+    location: 'Pune, India',
+    bullets: [
+      'Built deep expertise in telecom BSS and billing systems, applied to designing AI features and grounding LLM retrieval over enterprise data.',
+      'Introduced GenAI-assisted testing workflows for test case generation and defect triage.',
+      'Owned test strategy across 8+ major releases for VodafoneThree UK, including on-site assignment in Reading, UK.',
+    ],
+  },
+];
+
+const skills = [
+  { label: 'LLMs & GenAI', value: 'OpenAI API, Prompt Engineering, Function Calling, Agentic Workflows' },
+  { label: 'RAG', value: 'pgvector, Embeddings, ChromaDB, Semantic Search, Chunking' },
+  { label: 'Languages', value: 'Python, FastAPI, SQL, Java' },
+  { label: 'Tools', value: 'Git, Unix/Linux, CI/CD, REST APIs' },
+  { label: 'Domain', value: 'Telecom BSS, CRM, Billing, Order Management' },
+];
 
 export default function Home() {
   return (
-    <main style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '48px 24px',
-      position: 'relative',
-      overflow: 'hidden',
-    }}>
-
-      {/* Ambient background blobs */}
-      <div style={{
-        position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0,
-      }}>
-        <div style={{
-          position: 'absolute', top: '-20%', left: '-10%',
-          width: '600px', height: '600px',
-          background: 'radial-gradient(circle, rgba(139,123,239,0.07) 0%, transparent 70%)',
-          borderRadius: '50%',
-        }} />
-        <div style={{
-          position: 'absolute', bottom: '-20%', right: '-10%',
-          width: '600px', height: '600px',
-          background: 'radial-gradient(circle, rgba(224,200,122,0.06) 0%, transparent 70%)',
-          borderRadius: '50%',
-        }} />
-      </div>
-
-      <div style={{ position: 'relative', zIndex: 1, width: '100%', maxWidth: '860px' }}>
-
-        {/* Wordmark */}
-        <header style={{ textAlign: 'center', marginBottom: '72px' }}>
-          <p style={{
-            fontFamily: 'var(--mono)',
-            fontSize: '11px',
-            letterSpacing: '0.3em',
-            color: 'var(--text-muted)',
-            textTransform: 'uppercase',
-            marginBottom: '16px',
-          }}>
-            est. 2025
-          </p>
-          <h1 style={{
-            fontFamily: 'var(--sans)',
-            fontSize: 'clamp(48px, 8vw, 80px)',
-            fontWeight: 900,
-            letterSpacing: '-0.03em',
-            color: 'var(--text-primary)',
-            lineHeight: 1,
-          }}>
-            slick<span style={{ color: 'var(--text-muted)' }}>.wtf</span>
-          </h1>
-          <p style={{
-            marginTop: '20px',
-            fontFamily: 'var(--sans)',
-            fontSize: '15px',
-            fontWeight: 400,
-            color: 'var(--text-secondary)',
-            letterSpacing: '0.01em',
-          }}>
-            A small suite of tools for people who move with intention.
-          </p>
-        </header>
-
-        {/* App Cards — CSS hover via stylesheet class */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-          gap: '20px',
-        }}>
-
-          {/* GETitDONE Card */}
-          <a href="/getitdone" className="app-card app-card--getitdone" style={{ textDecoration: 'none' }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--accent-getitdone), transparent)' }} />
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '24px' }}>
-              <div className="app-card__icon app-card__icon--getitdone">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(224,200,122,0.9)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  {[0, 45, 90, 135, 180, 225, 270, 315].map((angle: number) => (
-                    <g key={angle} transform={`rotate(${angle} 12 12)`}>
-                      <path d="M12 8 C14 5 15 3 13.5 1.5 M12.5 5 C15.5 5 16.5 3 17.5 1.5 M12 8 C10 6 9.5 7 7.5 4.5" />
-                    </g>
-                  ))}
-                </svg>
-              </div>
-              <span className="app-card__path app-card__path--getitdone">/getitdone →</span>
-            </div>
-            <h2 className="app-card__title">GETitDONE</h2>
-            <p className="app-card__desc">Task management with peer accountability. Delegate, track, and appreciate the people who get things done with you.</p>
-            <div className="app-card__tags">
-              {['Tasks', 'Peers', 'Whuffies', 'Realtime'].map(tag => (
-                <span key={tag} className="app-card__tag">{tag}</span>
-              ))}
-            </div>
+    <main className="container">
+      <header>
+        <h1 className="hero-name">Bhaskar Bhardwaj</h1>
+        <p className="hero-title">AI Engineer · GenAI, LLMs, RAG, Agentic AI</p>
+        <nav className="hero-links">
+          <a href="mailto:bbhardwaj.work@gmail.com">Email</a>
+          <a href="tel:+919161571397">+91 9161571397</a>
+          <a href="https://www.linkedin.com/in/bhaskar-bhardwaj" target="_blank" rel="noopener noreferrer">
+            LinkedIn
           </a>
-
-          {/* TRACE Card */}
-          <a href="/trace" className="app-card app-card--trace" style={{ textDecoration: 'none' }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--accent-trace), transparent)' }} />
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '24px' }}>
-              <div className="app-card__icon app-card__icon--trace">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(139,123,239,0.9)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 16L12 7L18 16" />
-                  <circle cx="6" cy="16" r="2" fill="rgba(139,123,239,0.9)" />
-                  <circle cx="12" cy="7" r="2" fill="rgba(139,123,239,0.9)" />
-                  <circle cx="18" cy="16" r="2" fill="rgba(139,123,239,0.9)" />
-                </svg>
-              </div>
-              <span className="app-card__path app-card__path--trace">/trace →</span>
-            </div>
-            <h2 className="app-card__title">TRACE</h2>
-            <p className="app-card__desc">A brutalist AI journal that remembers everything you think. Leave a trace, ask Doobie anything about your past.</p>
-            <div className="app-card__tags">
-              {['Journal', 'AI Chat', 'Voice', 'Timeline'].map(tag => (
-                <span key={tag} className="app-card__tag">{tag}</span>
-              ))}
-            </div>
+          <a href="https://github.com/notbhaskarr" target="_blank" rel="noopener noreferrer">
+            GitHub
           </a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+          <span>Gurugram, India</span>
+        </nav>
+      </header>
 
+      <section>
+        <p className="section-label">About</p>
+        <p className="about-text">
+          AI Engineer with 3+ years spanning software development, functional test engineering,
+          and applied GenAI/LLM engineering. Currently building LLM-powered assistants, RAG pipelines,
+          and agentic workflows integrated with enterprise backend and billing systems.
+          Seeking roles to design and deploy LLM applications end-to-end.
+        </p>
+      </section>
+
+      <section>
+        <p className="section-label">Experience</p>
+        {experience.map((job) => (
+          <article key={`${job.role}-${job.period}`} className="job">
+            <div className="job-header">
+              <span className="job-title">{job.role}</span>
+              <span className="job-company">{job.company}</span>
+            </div>
+            <p className="job-meta">
+              {job.period} · {job.location}
+            </p>
+            <ul>
+              {job.bullets.map((bullet) => (
+                <li key={bullet.slice(0, 48)}>{bullet}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </section>
+
+      <section>
+        <p className="section-label">Skills</p>
+        <div className="skills-grid">
+          {skills.map((skill) => (
+            <div key={skill.label} className="skill-row">
+              <span className="skill-label">{skill.label}</span>
+              <span className="skill-value">{skill.value}</span>
+            </div>
+          ))}
         </div>
+      </section>
 
-        {/* Footer */}
-        <footer style={{ marginTop: '64px', textAlign: 'center' }}>
-          <p style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: 'var(--text-muted)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
-            slick .
+      <section>
+        <p className="section-label">Education</p>
+        <div className="item-row">
+          <p className="item-title">Bachelor of Engineering (BE) — GPA 9.04</p>
+          <p className="item-sub">
+            Savitribai Phule Pune University · Jul &apos;19 — Jul &apos;22 · Honours, Data Science
           </p>
-        </footer>
+        </div>
+      </section>
 
-      </div>
+      <section>
+        <p className="section-label">Certifications</p>
+        <div className="item-row">
+          <p className="item-title">Microsoft Certified: Azure AI Engineer Associate (AI-102)</p>
+          <p className="item-sub">Microsoft · Nov &apos;25</p>
+        </div>
+        <div className="item-row">
+          <p className="item-title">Test Architect</p>
+          <p className="item-sub">Amdocs · Dec &apos;23</p>
+        </div>
+      </section>
+
+      <section>
+        <p className="section-label">Publication</p>
+        <div className="item-row">
+          <p className="item-title">NFT Marketplace Based on Ethereum Blockchain</p>
+          <p className="item-sub">
+            IJARSCT, Vol 02, Issue 03, May 2022 · DOI 10.48175/IJRSET-3729
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <p className="section-label">Selected Project</p>
+        <div className="item-row">
+          <p className="item-title">
+            <a href="https://github.com/notbhaskarr/trace" target="_blank" rel="noopener noreferrer">
+              Trace
+            </a>
+            {' '}
+            — RAG GenAI Assistant
+          </p>
+          <p className="item-sub">LangGraph · FastAPI · pgvector · SSE streaming · Voice STT/TTS</p>
+          <div className="tags">
+            {['RAG', 'LangGraph', 'FastAPI', 'pgvector', 'LLM Eval'].map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© {new Date().getFullYear()} Bhaskar Bhardwaj</span>
+        <a href="mailto:bbhardwaj.work@gmail.com">bbhardwaj.work@gmail.com</a>
+      </footer>
     </main>
   );
 }
