@@ -11,7 +11,7 @@ const topSkills = [
 const coreArsenal = [
   {
     label: 'LLMs & GenAI',
-    value: 'OpenAI API, Prompt Engineering, Function Calling, Structured Outputs, Agentic Workflows, Cursor',
+    value: 'OpenAI API, Prompt Engineering, Structured Outputs, Agentic Workflows, Cursor',
   },
   {
     label: 'RAG & Vector Stores',
@@ -241,9 +241,13 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Licenses &amp; certifications</h2>
         <div className="list-item">
-          <div className="item-logo item-logo--cert" aria-hidden="true">
-            MS
-          </div>
+          <img
+            src="/logos/azure-ai-102.png"
+            alt="Microsoft Certified Azure AI Engineer Associate"
+            className="logo-img logo-img--contain"
+            width={48}
+            height={48}
+          />
           <div>
             <p className="item-title">Microsoft Certified: Azure AI Engineer Associate (AI-102)</p>
             <p className="item-sub">Microsoft · Issued Nov 2025</p>
