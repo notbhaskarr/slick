@@ -151,7 +151,7 @@ export default function Home() {
         <h2 className="section-title">Experience</h2>
         <div className="company-block">
           <img
-            src="/logos/amdocs.png"
+            src="/logos/amdocs.jpg"
             alt="Amdocs"
             className="logo-img"
             width={48}
@@ -252,7 +252,7 @@ export default function Home() {
         </div>
         <div className="list-item">
           <img
-            src="/logos/amdocs.png"
+            src="/logos/amdocs.jpg"
             alt="Amdocs"
             className="logo-img"
             width={48}
