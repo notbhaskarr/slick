@@ -177,11 +177,35 @@ a:hover {
   width: 48px;
   height: 48px;
   border-radius: 4px;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+.logo-img--contain {
+  object-fit: contain;
+  background: #f9f9f9;
+  padding: 4px;
+}
+
+.logo-img--getitdone {
+  object-fit: contain;
+  background: #fef3e2;
+  padding: 8px;
+}
+
+.logo-img--trace {
+  object-fit: contain;
+  background: #ede9fe;
+  padding: 8px;
 }
 
 .company-logo-inner {

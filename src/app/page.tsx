@@ -68,7 +68,8 @@ const projects = [
     description:
       'Delegate tasks, track progress, and recognize the people who get things done with you.',
     href: 'https://letsgetitdone.vercel.app/demo',
-    icon: '✓',
+    logo: '/logos/getitdone.svg',
+    logoClass: 'logo-img--getitdone',
     skills: ['Tasks', 'Peers', 'Delegation', 'Realtime'],
   },
   {
@@ -77,7 +78,8 @@ const projects = [
     description:
       'LangGraph orchestration, FastAPI, pgvector semantic search, SSE streaming, and voice STT/TTS.',
     href: 'https://github.com/notbhaskarr/trace',
-    icon: '◈',
+    logo: '/logos/trace.svg',
+    logoClass: 'logo-img--trace',
     skills: ['RAG', 'LangGraph', 'FastAPI', 'pgvector', 'LLM Eval'],
   },
 ];
@@ -148,9 +150,13 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Experience</h2>
         <div className="company-block">
-          <div className="company-logo" aria-hidden="true">
-            <div className="company-logo-inner" />
-          </div>
+          <img
+            src="/logos/amdocs.png"
+            alt="Amdocs"
+            className="logo-img"
+            width={48}
+            height={48}
+          />
           <div>
             <div className="company-header">
               <p className="company-name">Amdocs</p>
@@ -183,9 +189,13 @@ export default function Home() {
         <h2 className="section-title">Projects</h2>
         {projects.map((project) => (
           <div key={project.name} className="list-item">
-            <div className="item-logo item-logo--project" aria-hidden="true">
-              {project.icon}
-            </div>
+            <img
+              src={project.logo}
+              alt={project.name}
+              className={`logo-img ${project.logoClass}`}
+              width={48}
+              height={48}
+            />
             <div>
               <p className="item-title">
                 <a href={project.href} target="_blank" rel="noopener noreferrer">
@@ -212,9 +222,13 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Education</h2>
         <div className="list-item">
-          <div className="item-logo item-logo--edu" aria-hidden="true">
-            SPPU
-          </div>
+          <img
+            src="/logos/sppu.png"
+            alt="Savitribai Phule Pune University"
+            className="logo-img logo-img--contain"
+            width={48}
+            height={48}
+          />
           <div>
             <p className="item-title">Savitribai Phule Pune University</p>
             <p className="item-sub">Bachelor of Engineering – BE, Computer Engineering</p>
@@ -237,9 +251,13 @@ export default function Home() {
           </div>
         </div>
         <div className="list-item">
-          <div className="item-logo item-logo--cert" aria-hidden="true">
-            A
-          </div>
+          <img
+            src="/logos/amdocs.png"
+            alt="Amdocs"
+            className="logo-img"
+            width={48}
+            height={48}
+          />
           <div>
             <p className="item-title">Test Architect</p>
             <p className="item-sub">Amdocs · Issued Dec 2023</p>
