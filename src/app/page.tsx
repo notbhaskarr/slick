@@ -62,7 +62,7 @@ const projects = [
   },
   {
     name: 'Trace',
-    subtitle: 'RAG GenAI Assistant',
+    subtitle: 'AI native journal',
     description:
       'LangGraph orchestration, FastAPI, pgvector semantic search, SSE streaming, and voice STT/TTS.',
     href: 'https://letstrace.vercel.app/whytrace',
