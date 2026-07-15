@@ -29,7 +29,7 @@ const amdocsRoles = [
     location: 'Gurugram, India',
     mode: 'Hybrid',
     bullets: [
-      'Built Trace, a RAG-based GenAI assistant on enterprise billing system documentation, using LangGraph for multi-step query → retrieve → generate workflows, improving delivery efficiency by 30%.',
+      'Built Swift, a RAG-based GenAI assistant on enterprise billing system documentation, using LangGraph for multi-step query → retrieve → generate workflows, improving delivery efficiency by 30%.',
       'Implemented doc ingestion (chunk → embed → pgvector), semantic retrieval, and metadata-aware tools (date, location, recent docs) for grounded answers.',
       'Pinpointed and implemented necessary high-leverage AI use cases in the software development lifecycle enhancing functionality and performance.',
     ],
@@ -65,7 +65,7 @@ const projects = [
     subtitle: 'RAG GenAI Assistant',
     description:
       'LangGraph orchestration, FastAPI, pgvector semantic search, SSE streaming, and voice STT/TTS.',
-    href: 'https://github.com/notbhaskarr/trace',
+    href: 'https://letstrace.vercel.app/whytrace',
     logo: '/logos/trace.svg',
     logoClass: 'logo-img--trace',
   },
@@ -194,7 +194,9 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.name === 'GETitDONE' ? 'Open demo →' : 'View on GitHub →'}
+                {project.name === 'GETitDONE' || project.name === 'Trace'
+                  ? 'Open demo →'
+                  : 'View on GitHub →'}
               </a>
             </div>
           </div>
@@ -214,7 +216,7 @@ export default function Home() {
           <div>
             <p className="item-title">Savitribai Phule Pune University</p>
             <p className="item-sub">Bachelor of Engineering – BE, Computer Engineering</p>
-            <p className="item-sub">Jul 2019 – Jul 2022 · Grade: 9.04</p>
+            <p className="item-sub">Jul 2018 – Jul 2022 · Grade: 9.04</p>
             <p className="item-sub">Honours, Data Science Specialization</p>
           </div>
         </div>
