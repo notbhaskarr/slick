@@ -261,6 +261,12 @@ a:hover {
   padding: 4px;
 }
 
+.logo-img--azure {
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
 .logo-img--getitdone,
 .logo-img--trace {
   object-fit: contain;

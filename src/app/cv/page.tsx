@@ -108,7 +108,7 @@ export default function CvPage() {
             <strong>AI Engineer</strong> with 3.5+ years of experience spanning software development,
             functional test engineering, and applied <strong>GenAI</strong>/<strong>LLM</strong>{' '}
             engineering. Currently building <strong>LLM-powered assistants</strong>,{' '}
-            <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines, and{' '}
+            Retrieval-Augmented Generation (RAG) pipelines, and{' '}
             <strong>agentic workflows</strong> integrated with enterprise backend and billing systems
             at Amdocs.
           </p>
@@ -230,7 +230,7 @@ export default function CvPage() {
           <img
             src="/logos/azure-ai-102.png"
             alt="Microsoft Certified Azure AI Engineer Associate"
-            className="logo-img logo-img--contain"
+            className="logo-img logo-img--contain logo-img--azure"
             width={48}
             height={48}
           />
@@ -268,7 +268,7 @@ export default function CvPage() {
             in Science, Communication and Technology, Vol 02, Issue 03, May 2022,
           </p>
           <a
-            href="https://doi.org/10.48175/IJRSET-3729"
+            href="https://ijarsct.co.in/Paper3729.pdf"
             className="pub-doi"
             target="_blank"
             rel="noopener noreferrer"
