@@ -1,7 +1,7 @@
 const coreArsenal = [
   {
     label: 'LLMs & GenAI',
-    value: 'OpenAI API, Prompt Engineering, Structured Outputs, Agentic Workflows, Cursor',
+    value: 'OpenAI API, Prompt Engineering, Structured Outputs, Agentic Workflows, LangChain, LangGraph, Cursor',
   },
   {
     label: 'RAG & Vector Stores',
@@ -9,11 +9,11 @@ const coreArsenal = [
   },
   {
     label: 'Languages & Frameworks',
-    value: 'Python (primary), FastAPI, SQL, Java',
+    value: 'Python (primary), FastAPI, SQL, Java, PostgreSQL',
   },
   {
     label: 'Engineering Tools',
-    value: 'Git, Unix/Linux, CI/CD, REST APIs, GenAI-assisted SDLC/STLC',
+    value: 'Git, Unix/Linux, CI/CD (Jenkins), REST APIs, GenAI-assisted SDLC/STLC',
   },
   {
     label: 'Domain Expertise',
