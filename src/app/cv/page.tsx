@@ -281,7 +281,7 @@ export default function CvPage() {
       <footer>
         <span>© {new Date().getFullYear()} Bhaskar Bhardwaj</span>
         <span>
-          <a href="https://www.linkedin.com/in/bhaskar-bhardwaj" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/bhardwajbhaskar/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
           {' · '}
