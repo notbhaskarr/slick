@@ -46,7 +46,7 @@ const amdocsRoles = [
       'Introduced GenAI-assisted testing workflows, an early adoption of LLMs to accelerate test case generation and defect triage.',
       'Owned test strategy across 8+ major releases for VodafoneThree UK, a digital transformation program, including an on-site assignment in Reading, UK supporting flagship iPhone and Samsung launches, providing strong production-deployment experience.',
     ],
-    skills: ['Python', 'SQL', 'Test Automation', 'GenAI-Assisted STLC', 'Telecom BSS'],
+    skills: ['Test Strategy', 'Test Automation', 'Change Management', 'Telecom BSS'],
   },
 ];
 
@@ -237,7 +237,6 @@ export default function CvPage() {
           <div>
             <p className="item-title">Microsoft Certified: Azure AI Engineer Associate (AI-102)</p>
             <p className="item-sub">Microsoft · Issued Nov 2025</p>
-            <SkillTags skills={['Azure OpenAI', 'LLMs', 'AI Engineering']} />
           </div>
         </div>
         <div className="list-item">
@@ -251,7 +250,6 @@ export default function CvPage() {
           <div>
             <p className="item-title">Test Architect</p>
             <p className="item-sub">Amdocs · Issued Dec 2023</p>
-            <SkillTags skills={['Test Strategy', 'Change Management', 'Telecom BSS']} />
           </div>
         </div>
       </section>
