@@ -55,7 +55,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   text-align: center;
 }
 
@@ -106,44 +106,21 @@ a:hover {
   }
 }
 
-.landing-email-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.landing-email-chip {
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  color: rgba(0, 0, 0, 0.45);
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 999px;
-  padding: 6px 14px;
-  cursor: pointer;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-}
-
-.landing-email-chip:hover {
-  color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.22);
-  background: rgba(0, 0, 0, 0.02);
-}
-
-.landing-email-mail {
+.landing-footer {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.04em;
   color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.04em;
   text-decoration: none;
-  transition: color 0.2s ease;
+  user-select: none;
 }
 
-.landing-email-mail:hover {
-  color: rgba(0, 0, 0, 0.55);
+.landing-footer:hover {
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
