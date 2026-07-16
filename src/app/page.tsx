@@ -15,10 +15,10 @@ export default function Home() {
         </Link>
       </div>
       <a
-        href="mailto:bhaskar@slick.wtf"
+        href="mailto:contact@slick.wtf"
         className={`landing-footer ${slickFont.className}`}
       >
-        bhaskar@slick.wtf
+        contact@slick.wtf
       </a>
     </main>
   );
