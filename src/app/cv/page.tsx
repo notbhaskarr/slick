@@ -107,7 +107,7 @@ export default function CvPage() {
           <p>
             <strong>AI Engineer</strong> with 3.5+ years of experience spanning software development,
             functional test engineering, and applied <strong>GenAI</strong>/<strong>LLM</strong>{' '}
-            engineering. Currently building <strong>LLM-powered assistants</strong>,{' '}
+            engineering. Have built <strong>LLM-powered assistants</strong>,{' '}
             Retrieval-Augmented Generation (RAG) pipelines, and{' '}
             <strong>agentic workflows</strong> integrated with enterprise backend and billing systems
             at Amdocs.
@@ -143,7 +143,7 @@ export default function CvPage() {
           <div>
             <div className="company-header">
               <p className="company-name">Amdocs</p>
-              <p className="company-tenure">Full-time · 3 yrs 5 mos</p>
+              <p className="company-tenure">Full-time · 3 yrs 10 mos</p>
             </div>
             <div className="roles-timeline">
               {amdocsRoles.map((role) => (
