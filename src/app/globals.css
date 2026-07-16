@@ -262,7 +262,7 @@ a:hover {
 }
 
 .logo-img--azure {
-  padding: 0;
+  padding: 3px;
   object-fit: cover;
   object-position: center;
 }
