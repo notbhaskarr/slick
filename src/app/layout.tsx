@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Bhaskar Bhardwaj — AI Engineer',
-  description: 'AI Engineer specializing in LLMs, RAG, and agentic systems.',
+  title: 'slick',
+  description: 'slick',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

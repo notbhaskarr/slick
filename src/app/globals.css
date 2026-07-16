@@ -37,6 +37,94 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ── Landing (/ ) ── */
+.landing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.landing-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.landing-brand {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--text);
+}
+
+.landing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: var(--text);
+  animation: landing-blink 1s step-end infinite;
+}
+
+@keyframes landing-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.landing-email,
+.landing-cv {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.landing-email:hover,
+.landing-cv:hover {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+.landing-cv {
+  margin-top: 2px;
+}
+
+.landing-footer {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.08em;
+  user-select: none;
+}
+
 .page {
   max-width: 1024px;
   margin: 0 auto;
