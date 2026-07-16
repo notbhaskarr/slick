@@ -24,8 +24,8 @@ const coreArsenal = [
 const amdocsRoles = [
   {
     title: 'Software Developer',
-    period: "Jan '24 — Present",
-    duration: '2.5 yr+',
+    period: "Jan '24 — June '26",
+    duration: '2 yr 5 mos',
     location: 'Gurugram, India',
     mode: 'Hybrid',
     bullets: [
