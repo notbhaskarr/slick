@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { JetBrains_Mono } from 'next/font/google';
 
 const slickFont = JetBrains_Mono({
@@ -9,11 +10,10 @@ export default function Home() {
   return (
     <main className="landing">
       <div className="landing-center">
-        <h1 className={`landing-brand ${slickFont.className}`}>
+        <Link href="/cv" className={`landing-brand landing-brand-link ${slickFont.className}`}>
           slick<span className="landing-cursor">_</span>
-        </h1>
+        </Link>
       </div>
-      <div className="landing-footer">slick .</div>
     </main>
   );
 }
