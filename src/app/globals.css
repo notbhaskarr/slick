@@ -61,20 +61,14 @@ a:hover {
 
 .landing-brand {
   font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   line-height: 1;
   color: var(--text);
 }
 
 .landing-cursor {
-  display: inline-block;
-  width: 2px;
-  height: 1em;
-  margin-left: 2px;
-  vertical-align: text-bottom;
-  background: var(--text);
-  animation: landing-blink 1s step-end infinite;
+  animation: landing-blink 1.06s step-end infinite;
 }
 
 @keyframes landing-blink {
@@ -92,25 +86,6 @@ a:hover {
     animation: none;
     opacity: 1;
   }
-}
-
-.landing-email,
-.landing-cv {
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.4);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.landing-email:hover,
-.landing-cv:hover {
-  color: rgba(0, 0, 0, 0.65);
-  text-decoration: none;
-}
-
-.landing-cv {
-  margin-top: 2px;
 }
 
 .landing-footer {
@@ -332,6 +307,13 @@ a:hover {
   background: var(--divider);
 }
 
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
 .role-title {
   font-size: 15px;
   font-weight: 600;
@@ -346,7 +328,8 @@ a:hover {
 .role-location {
   font-size: 13px;
   color: var(--text-secondary);
-  margin-top: 2px;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .role-bullets {
@@ -483,5 +466,15 @@ footer {
 
   .profile-name {
     font-size: 24px;
+  }
+
+  .role-header {
+    flex-wrap: wrap;
+    gap: 2px 12px;
+  }
+
+  .role-location {
+    text-align: left;
+    width: 100%;
   }
 }
